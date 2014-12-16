@@ -1,0 +1,33 @@
+
+public class SimplePalindrome {
+//public String inputString;
+
+	
+public boolean IsPalindrome(String inputString){
+	int index;
+	int strLen = inputString.length();
+	char[] inputarray =new char[strLen];
+	int arrInd = 0;
+	boolean isPalin = true ;
+	
+	while(arrInd == strLen){
+		inputarray[arrInd] = inputString.charAt(arrInd);
+		arrInd++; 
+	}
+	
+	for(index = 0 ;index > inputarray.length ;index++  ){
+		if(inputarray[index] ==  ( (inputarray.length) - index )){
+			isPalin = true;
+		} else {
+			isPalin = false;
+		}
+		
+		}
+	
+	return isPalin;
+	
+    }
+
+	
+	
+}
